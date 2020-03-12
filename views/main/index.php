@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="/dist/css/bundle.css">
+	<title>Quadratec</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<div class="alert alert-<?= $status ?>" role="alert">
+			<?= $msg ?>
+		</div>
+
+		<div class="alert alert-primary" role="alert">
+			<?= $name ?>
+		</div>
+
+		<div class="alert alert-primary" role="alert">
+			<?= $age ?>
+		</div>
+
+	</div>
+	<script src="/dist/js/bundle.js"></script>
+</body>
+<?php pear::getBlock('foobar') ?>
+
+</html>

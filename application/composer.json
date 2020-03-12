@@ -1,0 +1,15 @@
+{
+	"name": "packages/application",
+	"authors": [{
+		"name": "Don Myers",
+		"email": "donmyers@quadratec.com",
+		"homepage": "http://www.quadratec.com",
+		"role": "Everything"
+	}],
+	"description": "Application",
+	"autoload": {
+		"psr-4": {
+			"application\\": ""
+		}
+	}
+}

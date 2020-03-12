@@ -1,0 +1,1224 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "564a6ea04465d1b2ef4c7886dd611644",
+    "packages": [
+        {
+            "name": "adbario/php-dot-notation",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adbario/php-dot-notation.git",
+                "reference": "eee4fc81296531e6aafba4c2bbccfc5adab1676e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adbario/php-dot-notation/zipball/eee4fc81296531e6aafba4c2bbccfc5adab1676e",
+                "reference": "eee4fc81296531e6aafba4c2bbccfc5adab1676e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0|^6.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Adbar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Riku Särkinen",
+                    "email": "riku@adbar.io"
+                }
+            ],
+            "description": "PHP dot notation access to arrays",
+            "homepage": "https://github.com/adbario/php-dot-notation",
+            "keywords": [
+                "ArrayAccess",
+                "dotnotation"
+            ],
+            "time": "2019-01-01T23:59:15+00:00"
+        },
+        {
+            "name": "catfan/medoo",
+            "version": "v1.7.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/catfan/Medoo.git",
+                "reference": "2d675f73e23f63bbaeb9a8aa33318659a3d3c32f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/catfan/Medoo/zipball/2d675f73e23f63bbaeb9a8aa33318659a3d3c32f",
+                "reference": "2d675f73e23f63bbaeb9a8aa33318659a3d3c32f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=5.4"
+            },
+            "suggest": {
+                "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+                "ext-pdo_mysql": "For MySQL or MariaDB database",
+                "ext-pdo_oci": "For Oracle database",
+                "ext-pdo_oci8": "For Oracle version 8 database",
+                "ext-pdo_pqsql": "For PostgreSQL database",
+                "ext-pdo_sqlite": "For SQLite database",
+                "ext-pdo_sqlsrv": "For MSSQL database on both Window/Liunx platform"
+            },
+            "type": "framework",
+            "autoload": {
+                "psr-4": {
+                    "Medoo\\": "/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Angel Lai",
+                    "email": "angel@catfan.me"
+                }
+            ],
+            "description": "The lightweight PHP database framework to accelerate development",
+            "homepage": "https://medoo.in",
+            "keywords": [
+                "database",
+                "database library",
+                "lightweight",
+                "mariadb",
+                "mssql",
+                "mysql",
+                "oracle",
+                "php framework",
+                "postgresql",
+                "sql",
+                "sqlite"
+            ],
+            "time": "2020-02-11T08:20:42+00:00"
+        },
+        {
+            "name": "faapz/pdo",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FaaPz/PDO.git",
+                "reference": "4bf3d594b604f0de9f628f8824d411a6c1160639"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FaaPz/PDO/zipball/4bf3d594b604f0de9f628f8824d411a6c1160639",
+                "reference": "4bf3d594b604f0de9f628f8824d411a6c1160639",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "phan/phan": "^2.2",
+                "phpunit/phpunit": "^8",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FaaPz\\PDO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian de Laender",
+                    "email": "fabian@faapz.productions",
+                    "homepage": "https://faapz.productions",
+                    "role": "Owner"
+                },
+                {
+                    "name": "Alexander Barker",
+                    "email": "alex@1stleg.com",
+                    "homepage": "https://github.com/kwhat/",
+                    "role": "Collaborator"
+                }
+            ],
+            "description": "Just another PDO database library",
+            "homepage": "https://github.com/FaaPz/PDO",
+            "keywords": [
+                "database",
+                "pdo",
+                "sql"
+            ],
+            "time": "2020-01-22T05:57:29+00:00"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.3 <5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Michelf\\": "Michelf/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2019-12-02T02:32:27+00:00"
+        },
+        {
+            "name": "mmucklo/krumo",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mmucklo/krumo.git",
+                "reference": "0e9cb47aec2e46198e4a779966fe1012d4d09c1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mmucklo/krumo/zipball/0e9cb47aec2e46198e4a779966fe1012d4d09c1f",
+                "reference": "0e9cb47aec2e46198e4a779966fe1012d4d09c1f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.17"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "dev-master",
+                "phpmd/phpmd": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "class.krumo.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Kaloyan K. Tsvetkov",
+                    "email": "kaloyan@kaloyan.info"
+                },
+                {
+                    "name": "Stefan Thomas",
+                    "email": "moon@justmoon.de"
+                },
+                {
+                    "name": "Matthew J. Mucklo",
+                    "email": "mmucklo@gmail.com"
+                },
+                {
+                    "name": "Scott Baker",
+                    "email": "scott@perturb.org"
+                }
+            ],
+            "description": "KRUMO - version 2.0 of print_r(); and var_dump(); (with new updates)",
+            "keywords": [
+                "debug",
+                "debugging",
+                "krumo",
+                "pretty",
+                "print",
+                "print_r",
+                "var_dump"
+            ],
+            "time": "2019-02-06T22:04:57+00:00"
+        },
+        {
+            "name": "packages/application",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "application",
+                "reference": "780a0eed85c4ede9c76835c180e5a640a1ae185e"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "application\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@quadratec.com",
+                    "homepage": "http://www.quadratec.com",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Application"
+        },
+        {
+            "name": "projectorangebox/app",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/app",
+                "reference": "d32f35decfe5dadcf7ddff568c26393e36f5291f"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\app\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Application"
+        },
+        {
+            "name": "projectorangebox/auth",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/auth",
+                "reference": "70ceda622d9623e6d4b14cb4ac392ed74b691b74"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\auth\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Auth"
+        },
+        {
+            "name": "projectorangebox/cache",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/cache",
+                "reference": "8db15d494cb828e8595230d92d2fb5158598deff"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\cache\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Cache"
+        },
+        {
+            "name": "projectorangebox/ci_parser",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/parser/ci",
+                "reference": "1db32a80148208fcd483c7e41e155d51e026368e"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\parser\\ci\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "CI Parser"
+        },
+        {
+            "name": "projectorangebox/common",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/common",
+                "reference": "d519a098ebc1b4786ac0d887c05214e1c5953758"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\common\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox/microcms",
+                    "role": "Everything"
+                }
+            ],
+            "description": "projectorangebox common functions and classes."
+        },
+        {
+            "name": "projectorangebox/config",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/config",
+                "reference": "ed527d1fb4673e0eb317fbcef7da81ebcfea1de5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\config\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Config"
+        },
+        {
+            "name": "projectorangebox/container",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/container",
+                "reference": "9c74cb1edf95b6d9969a035b8348c6dbbc0cc9c6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\container\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Container"
+        },
+        {
+            "name": "projectorangebox/cookie",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/cookie",
+                "reference": "ad3112c5fda661c0f4734e28cbb78beee5f0f5ed"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\cookie\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Cookie"
+        },
+        {
+            "name": "projectorangebox/data",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/data",
+                "reference": "6e37b8cf5e41aabd79dd228cf6cc31cfd4db87dc"
+            },
+            "require": {
+                "adbario/php-dot-notation": "2.x"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\data\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Data"
+        },
+        {
+            "name": "projectorangebox/dispatcher",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/dispatcher",
+                "reference": "c3fc7132d49325475e2ad3b871cc497ead64a368"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\dispatcher\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Dispatcher"
+        },
+        {
+            "name": "projectorangebox/event",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/event",
+                "reference": "f1c97a2cc0fba7506edf68733a82bb4f5d67bb99"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\event\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Events"
+        },
+        {
+            "name": "projectorangebox/filter",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/filter",
+                "reference": "8d547e0edeb0619d031f4ae3a9d0f2f0f4e24da6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\filter\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Validation"
+        },
+        {
+            "name": "projectorangebox/forker",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/forker",
+                "reference": "22e4d8b6702672f8167518209486e83deb18df88"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\forker\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "forker"
+        },
+        {
+            "name": "projectorangebox/fs",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/fs",
+                "reference": "e6bd3890d36356a3444b2d89ea8fd2497feeaf4a"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/FS.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox/microcms",
+                    "role": "Everything"
+                }
+            ],
+            "description": "projectorangebox file system abstract"
+        },
+        {
+            "name": "projectorangebox/handlebars_parser",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/parser/handlebars",
+                "reference": "8b53cc4341d5bd5b4e8836947ecf116779f068bd"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\parser\\handlebars\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Parser Handlebars"
+        },
+        {
+            "name": "projectorangebox/html",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/html",
+                "reference": "8dfb9b7a301d08c352e8557c2f7b181389d204b1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\html\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "html"
+        },
+        {
+            "name": "projectorangebox/log",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/log",
+                "reference": "ffcd70b448b39ae39ae060bcaa817b586dc8c6e4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\log\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Logger"
+        },
+        {
+            "name": "projectorangebox/markdown_parser",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/parser/markdown",
+                "reference": "18cf4745bd96d285a77c752bb30889009e3fd13d"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\parser\\markdown\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Parser Markdown"
+        },
+        {
+            "name": "projectorangebox/middleware",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/middleware",
+                "reference": "2535ce31d5a79970581e2d28f71bd3be766c1c0c"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\middleware\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Middleware"
+        },
+        {
+            "name": "projectorangebox/mock",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/mock",
+                "reference": "bfef99238d651703bb57e574e3ee1605fcf92686"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\mock\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Mocks"
+        },
+        {
+            "name": "projectorangebox/models",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/models",
+                "reference": "f0284a6f09fdcf3a3805e49c3968058dddaf99e9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\models\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "models"
+        },
+        {
+            "name": "projectorangebox/page_parser",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/parser/page",
+                "reference": "d518a5caaa51507cb6fe059d9a2a3337c35f2abf"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\parser\\page\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Parser Page"
+        },
+        {
+            "name": "projectorangebox/pear",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/pear",
+                "reference": "c64866262dfd815924e75c8279b713938006d668"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\pear\\": "src"
+                },
+                "files": [
+                    "src/Pear.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "pear"
+        },
+        {
+            "name": "projectorangebox/rememberme",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/rememberme",
+                "reference": "878a0c137a0bf576d34ed74800fd4aa9d51532fd"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\rememberme\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Rememberme"
+        },
+        {
+            "name": "projectorangebox/request",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/request",
+                "reference": "a2fe925ac026077f8a5d13c598e1e76ef65fcbb3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\request\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "di"
+        },
+        {
+            "name": "projectorangebox/response",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/response",
+                "reference": "1092efa93ff638647611b61bfa29ea9c367c8004"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\response\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Response"
+        },
+        {
+            "name": "projectorangebox/router",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/router",
+                "reference": "379204b1e359eaedc502c1b7d0a5b9a6340bcb8c"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\router\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Router"
+        },
+        {
+            "name": "projectorangebox/session",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/session",
+                "reference": "49b9f2ca8744eced156b51cdae0a40076e82e3d4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\session\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Session"
+        },
+        {
+            "name": "projectorangebox/simpleq",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/simpleq",
+                "reference": "ea2a5618f00c648aea02c51f9575e8b9e7b07e8d"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\simpleq\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "simpleq"
+        },
+        {
+            "name": "projectorangebox/user",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/user",
+                "reference": "6d4b2051fd3ad26ed2161a55f2e995aae45a1c19"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\user\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "User"
+        },
+        {
+            "name": "projectorangebox/validation",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/validation",
+                "reference": "719a039f8a53d9ac69626a4029c81544be4e3371"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\validation\\": "src"
+                },
+                "files": [
+                    "src/common.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Validation"
+        },
+        {
+            "name": "projectorangebox/view",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/view",
+                "reference": "92de1b4e6c24e8f4d9d4c7321d7035df09f72631"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\view\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "View"
+        },
+        {
+            "name": "projectorangebox/viewresponse",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/viewresponse",
+                "reference": "1e45c909a6e91c512c2911ca4a7ecceb50eedcaa"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\viewresponse\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "View formatter with request auto detection and responses if nessesary."
+        },
+        {
+            "name": "zordius/lightncandy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zordius/lightncandy.git",
+                "reference": "5f8dc549e834cee6080b3820f71f1076084fe8ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zordius/lightncandy/zipball/5f8dc549e834cee6080b3820f71f1076084fe8ea",
+                "reference": "5f8dc549e834cee6080b3820f71f1076084fe8ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LightnCandy\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zordius Chen",
+                    "email": "zordius@gmail.com"
+                }
+            ],
+            "description": "An extremely fast PHP implementation of handlebars ( http://handlebarsjs.com/ ) and mustache ( http://mustache.github.io/ ).",
+            "homepage": "https://github.com/zordius/lightncandy",
+            "keywords": [
+                "handlebars",
+                "logicless",
+                "mustache",
+                "php",
+                "template"
+            ],
+            "time": "2020-03-10T11:03:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "packages/application": 20,
+        "projectorangebox/html": 20,
+        "projectorangebox/fs": 20,
+        "projectorangebox/common": 20,
+        "projectorangebox/app": 20,
+        "projectorangebox/cache": 20,
+        "projectorangebox/config": 20,
+        "projectorangebox/container": 20,
+        "projectorangebox/log": 20,
+        "projectorangebox/request": 20,
+        "projectorangebox/response": 20,
+        "projectorangebox/router": 20,
+        "projectorangebox/dispatcher": 20,
+        "projectorangebox/view": 20,
+        "projectorangebox/event": 20,
+        "projectorangebox/validation": 20,
+        "projectorangebox/session": 20,
+        "projectorangebox/auth": 20,
+        "projectorangebox/mock": 20,
+        "projectorangebox/middleware": 20,
+        "projectorangebox/viewresponse": 20,
+        "projectorangebox/user": 20,
+        "projectorangebox/filter": 20,
+        "projectorangebox/models": 20,
+        "projectorangebox/forker": 20,
+        "projectorangebox/pear": 20,
+        "projectorangebox/simpleq": 20,
+        "zordius/lightncandy": 20,
+        "projectorangebox/handlebars_parser": 20,
+        "projectorangebox/markdown_parser": 20,
+        "projectorangebox/page_parser": 20,
+        "projectorangebox/ci_parser": 20,
+        "projectorangebox/data": 20,
+        "projectorangebox/rememberme": 20,
+        "projectorangebox/cookie": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

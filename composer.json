@@ -1,0 +1,182 @@
+{
+	"name": "application/example",
+	"description": "Example",
+	"require": {
+		"mmucklo/krumo": "*",
+		"faapz/pdo": "^2.0",
+		"catfan/medoo": "^1.7",
+		"packages/application": "dev-master",
+		"projectorangebox/html": "dev-master",
+		"projectorangebox/fs": "dev-master",
+		"projectorangebox/common": "dev-master",
+		"projectorangebox/app": "dev-master",
+		"projectorangebox/cache": "dev-master",
+		"projectorangebox/config": "dev-master",
+		"projectorangebox/container": "dev-master",
+		"projectorangebox/log": "dev-master",
+		"projectorangebox/request": "dev-master",
+		"projectorangebox/response": "dev-master",
+		"projectorangebox/router": "dev-master",
+		"projectorangebox/dispatcher": "dev-master",
+		"projectorangebox/view": "dev-master",
+		"projectorangebox/event": "dev-master",
+		"projectorangebox/validation": "dev-master",
+		"projectorangebox/session": "dev-master",
+		"projectorangebox/auth": "dev-master",
+		"projectorangebox/mock": "dev-master",
+		"projectorangebox/middleware": "dev-master",
+		"projectorangebox/viewresponse": "dev-master",
+		"projectorangebox/user": "dev-master",
+		"projectorangebox/filter": "dev-master",
+		"projectorangebox/models": "dev-master",
+		"projectorangebox/forker": "dev-master",
+		"projectorangebox/pear": "dev-master",
+		"projectorangebox/simpleq": "dev-master",
+		"michelf/php-markdown": "^1.9",
+		"zordius/lightncandy": "dev-master",
+		"projectorangebox/handlebars_parser": "dev-master",
+		"projectorangebox/markdown_parser": "dev-master",
+		"projectorangebox/page_parser": "dev-master",
+		"projectorangebox/ci_parser": "dev-master",
+		"projectorangebox/data": "dev-master",
+		"projectorangebox/rememberme": "dev-master",
+		"projectorangebox/cookie": "dev-master"
+	},
+	"repositories": [{
+			"type": "path",
+			"url": "application"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/simpleq"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/pear"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/html"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/user"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/filter"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/fs"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/common"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/app"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/cache"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/event"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/config"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/container"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/log"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/request"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/session"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/response"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/router"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/dispatcher"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/view"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/forker"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/validation"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/auth"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/mock"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/models"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/viewresponse"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/middleware"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/parser/handlebars"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/parser/markdown"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/parser/page"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/parser/ci"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/data"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/rememberme"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/cookie"
+		}
+	]
+}
