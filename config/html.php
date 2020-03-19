@@ -22,8 +22,10 @@ getNotifications.open(\'GET\', \'/notifications\', true);
 getNotifications.onload = function() {
   if (this.status >= 200 && this.status < 400) {
     var data = JSON.parse(this.response);
-		document.getElementById("notify").innerHTML = \'<div class="alert alert-\' + data.errors.status + \'" role="alert">\' + data.errors.msg + \'</div>\';
-  }
+		if (data.errors) {
+			document.getElementById("notify").innerHTML = \'<div class="alert alert-\' + data.errors.status + \'" role="alert">\' + data.errors.msg + \'</div>\';
+		}
+	}
 };
 
 getNotifications.send();'],

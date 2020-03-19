@@ -12,7 +12,6 @@
 		<?= pear::html('style') ?>
 	</style>
 	<?= pear::html('icon') ?>
-	<?= pear::getBlock('head') ?>
 </head>
 
 <body class="<?= pear::html('body_class') ?>">

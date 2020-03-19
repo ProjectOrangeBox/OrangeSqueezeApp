@@ -13,11 +13,11 @@ class main extends Injectable
 
 	public function fourohfour(): void
 	{
-		$this->viewresponse->response(404)->view(['title' => 'Error!', 'body' => 'Page Not Found.'], 'show_error');
+		$this->viewresponse->response(404)->view(['title' => 'Error!', 'body' => 'Page Not Found.']);
 	}
 
 	public function notify(): void
 	{
-		$this->viewresponse->response(200)->view(['json' => ['error' => $this->data->get('error')]], 'json');
+		$this->viewresponse->response(200)->view(['json' => ['error' => $this->data->get('error')]]);
 	}
 }/* end class */

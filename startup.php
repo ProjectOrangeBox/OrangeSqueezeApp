@@ -18,6 +18,7 @@ function showException($exception): void
 }
 */
 
+/*
 function showException($exception): void
 {
 	ob_flush();
@@ -34,5 +35,32 @@ function showException($exception): void
 
 	exit(1);
 }
+*/
+
+function showException($exception): void
+{
+	echo "Uncaught exception: ", $exception->getMessage() . '<br>';
+	echo 'File ' . $exception->getFile() . '<br>';
+	echo 'Line ' . $exception->getLine() . '<br>';
+	exit(1);
+}
+
+set_exception_handler('showException');
+
+function showError($errno, $errstr, $errfile, $errline)
+{
+	if (!(error_reporting() & $errno)) {
+		return false;
+	}
+
+	echo "<b>ERROR</b>[$errno]<br> $errstr<br>";
+	echo "Line $errline of $errfile<br>";
+	echo "PHP " . PHP_VERSION . " (" . PHP_OS . ")<br>";
+	exit(1);
+}
+
+set_error_handler('showError');
 
 require __ROOT__ . '/vendor/autoload.php';
+
+(new \projectorangebox\app\App(parse_ini_file(__ROOT__ . '/.env', true, INI_SCANNER_TYPED)))->dispatch();

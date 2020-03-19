@@ -59,8 +59,7 @@
 	</style>
 </head>
 
-<body>
-
+<body class="">
 	<form class="form-signin" action="/login/process" method="post">
 		<h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
 		<label for="username" class="sr-only">Email address</label>
@@ -82,12 +81,23 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function(e) {
-			jQuery.get('/notify', function(data) {
-				console.log(data);
-				if (data.error) {
-					$('#notify').html('<div class="alert alert-' + data.error.status + '" role="alert">' + data.error.msg + '</div>');
+			var getNotifications = new XMLHttpRequest();
+
+			getNotifications.open('GET', '/notify', true);
+
+			getNotifications.onload = function() {
+				if (this.status >= 200 && this.status < 400) {
+					var data = JSON.parse(this.response);
+
+					console.log(data);
+
+					if (data.error) {
+						document.getElementById('notify').innerHTML = '<div class="alert alert-' + data.error.status + '" role="alert">' + data.error.msg + '</div>';
+					}
 				}
-			});
+			};
+
+			getNotifications.send();
 		});
 	</script>
 </body>

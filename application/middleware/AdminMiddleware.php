@@ -2,10 +2,10 @@
 
 namespace application\middleware;
 
-use projectorangebox\middleware\Middleware;
+use projectorangebox\middleware\MiddlewareAbstract;
 use projectorangebox\middleware\MiddlewareRequestInterface;
 
-class AdminMiddleware extends Middleware implements MiddlewareRequestInterface
+class AdminMiddleware extends MiddlewareAbstract implements MiddlewareRequestInterface
 {
 
 	public function request(): void

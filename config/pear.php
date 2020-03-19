@@ -1,5 +1,7 @@
 <?php
 
 return [
-	'search' => ['(.*)/plugins/(?<key>.*)\.php'],
+	'search' => [
+		'(.*)/plugins/(?<key>.*)\.php'
+	],
 ];

@@ -1,6 +1,12 @@
 <?php
 
 return [
+	'container' => [function ($services) {
+		return new \projectorangebox\container\Container($services);
+	}],
+	'config' => [function ($config) {
+		return new \projectorangebox\config\Config($config);
+	}],
 	'data' => [function ($container) {
 		$config = ['sessionService' => $container->session];
 		return new \projectorangebox\data\Data($config);
@@ -8,9 +14,6 @@ return [
 	'log' => [function ($container) {
 		$config = $container->config->get('logger', []);
 		return new \projectorangebox\log\Logger($config);
-	}],
-	'config' => [function () {
-		return new \projectorangebox\config\Config();
 	}],
 	'models' => [function ($container) {
 		$config = $container->config->get('models', []);
@@ -40,8 +43,9 @@ return [
 	}],
 	'pdoDefault' => [function ($container) {
 		$config = $container->config->get('connections.default database', []);
+		$uri = $config['type'] . ':dbname=' . $config['name'] . ';host=' . $config['server'];
 
-		return new \PDO($config['type'] . ':dbname=' . $config['name'] . ';host=' . $config['server'], $config['username'], $config['password']);
+		return new \PDO($uri, $config['username'], $config['password']);
 	}],
 	'viewresponse' => [function ($container) {
 		$config = $container->config->get('viewresponse', []);
@@ -49,13 +53,10 @@ return [
 		/* auto detect request type and set a few things in the config */
 		if ($container->request->isCli()) {
 			$config['type'] = 'cli';
-			$config['format file prefix'] = '//formats/cli/';
 		} elseif ($container->request->isAjax()) {
 			$config['type'] = 'ajax';
-			$config['format file prefix'] = '//formats/ajax/';
 		} else {
 			$config['type'] = 'html';
-			$config['format file prefix'] = '//formats/html/';
 		}
 
 		$config['viewService'] = $container->view;
@@ -65,6 +66,9 @@ return [
 	}],
 	'session' => [function ($container) {
 		$config = $container->config->get('session', []);
+
+		$config['pdo'] = $container->pdoDefault;
+
 		return new \projectorangebox\session\Session($config);
 	}],
 	'router' => [function ($container) {
@@ -113,21 +117,19 @@ return [
 	'middleware' => [function ($container) {
 		$config = $container->config->get('middleware', []);
 
-		$config['default'] = ['get', 'cli', 'post', 'put', 'delete'];
-
 		$config['request'] = cache('app.request.middleware', function () use ($config) {
-			$config['routes'] = $config['request'];
+			$config['routes'] = $config['request'] ?? [];
 			return \projectorangebox\router\RouterBuilder::build($config);
 		});
 
 		$config['response'] = cache('app.response.middleware', function () use ($config) {
-			$config['routes'] = $config['response'];
+			$config['routes'] = $config['response'] ?? [];
 			return \projectorangebox\router\RouterBuilder::build($config);
 		});
 
 		$config['containerService'] = &$container;
 
-		return new \projectorangebox\middleware\handler\Middleware($config);
+		return new \projectorangebox\middleware\Middleware($config);
 	}],
 	'forker' => [function ($container) {
 		$config = $container->config->get('forker', []);
