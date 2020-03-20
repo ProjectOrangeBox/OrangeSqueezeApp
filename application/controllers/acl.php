@@ -19,11 +19,11 @@ class acl extends Injectable
 
 		$this->acl->permission->insert($data);
 
-		#var_dump('permission', $this->acl->permission->errors());
+		var_dump('permission', $this->acl->permission->errors());
 
 		$permission = $this->acl->permissions->getBy(['key' => 'test::folder/folder/file']);
 
-		#var_dump($permission);
+		var_dump('permission', $permission);
 
 		$data = [
 			'name' => 'Head-Dude',
@@ -32,20 +32,20 @@ class acl extends Injectable
 
 		$this->acl->role->insert($data);
 
-		#var_dump('role', $this->acl->role->errors());
+		var_dump('role', $this->acl->role->errors());
 
 		$role = $this->acl->roles->getBy(['name' => 'Head-Dude']);
 
-		#var_dump($role);
+		var_dump('role', $role);
 
 		$user = $this->acl->users->getBy(['email' => 'pbowman@quadratec.com']);
 
-		#var_dump($user);
+		var_dump('user', $user);
 
 		$this->acl->users->addRole($user['id'], $role['id']);
 
 		$userFull = $this->acl->getUser($user['id']);
 
-		var_dump($userFull);
+		var_dump('userFull', $userFull);
 	}
 } /* end class */
