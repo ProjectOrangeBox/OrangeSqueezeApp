@@ -15,6 +15,28 @@ return [
 		$config = $container->config->get('logger', []);
 		return new \projectorangebox\log\Logger($config);
 	}],
+	'acl' => [function ($container) {
+		$config = $container->config->get('auth', []);
+
+		$config['usersModel'] = $container->models->users;
+		$config['rolesModel'] = $container->models->roles;
+		$config['permissionsModel'] = $container->models->permissions;
+
+		$config['db'] = $container->pdoDefault;
+
+		return new \projectorangebox\acl\Acl($config);
+	}],
+	'user' => [function ($container) {
+		$config = $container->config->get('auth', []);
+
+		$config['authService'] = $container->auth;
+		$config['sessionService'] = $container->session;
+		$config['cacheService'] = $container->cache;
+
+		$config['db'] = $container->pdoDefault;
+
+		return new \projectorangebox\user\User($config);
+	}],
 	'models' => [function ($container) {
 		$config = $container->config->get('models', []);
 
@@ -29,17 +51,6 @@ return [
 		$config['db'] = $container->pdoDefault;
 
 		return new \projectorangebox\auth\Auth($config);
-	}],
-	'user' => [function ($container) {
-		$config = $container->config->get('auth', []);
-
-		$config['authService'] = $container->auth;
-		$config['sessionService'] = $container->session;
-		$config['cacheService'] = $container->cache;
-
-		$config['db'] = $container->pdoDefault;
-
-		return new \projectorangebox\user\User($config);
 	}],
 	'pdoDefault' => [function ($container) {
 		$config = $container->config->get('connections.default database', []);

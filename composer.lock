@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "564a6ea04465d1b2ef4c7886dd611644",
+    "content-hash": "856eb932dda59e577cd74c78afca2216",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -304,6 +304,30 @@
                 }
             ],
             "description": "Application"
+        },
+        {
+            "name": "projectorangebox/acl",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/projectorangebox/acl",
+                "reference": "ad8ded1409cb86dcf3986e8052682f0963774f8b"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "projectorangebox\\acl\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Don Myers",
+                    "email": "donmyers@me.com",
+                    "homepage": "https://github.com/ProjectOrangeBox",
+                    "role": "Everything"
+                }
+            ],
+            "description": "Access Control Level"
         },
         {
             "name": "projectorangebox/app",
@@ -1215,7 +1239,8 @@
         "projectorangebox/ci_parser": 20,
         "projectorangebox/data": 20,
         "projectorangebox/rememberme": 20,
-        "projectorangebox/cookie": 20
+        "projectorangebox/cookie": 20,
+        "projectorangebox/acl": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

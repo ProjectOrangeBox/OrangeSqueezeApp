@@ -4,8 +4,8 @@ return [
 	'models' => [
 		'snippets' => 'projectorangebox\models\models\SnippetModel',
 
-		'users' => 'projectorangebox\models\models\UserModel',
-		'roles' => 'projectorangebox\models\models\RoleModel',
-		'permissions' => 'projectorangebox\models\models\PermissionModel',
+		'users' => 'projectorangebox\acl\models\UserModel',
+		'roles' => 'projectorangebox\acl\models\RoleModel',
+		'permissions' => 'projectorangebox\acl\models\PermissionModel',
 	],
 ];

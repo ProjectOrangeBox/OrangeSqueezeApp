@@ -2,6 +2,7 @@
 
 return [
 	'routes' => [
+		'/acl' => ['application\controllers\acl', 'test'],
 		'/notifications' => ['application\controllers\main', 'notify'],
 		'/test' => ['application\controllers\test', 'index'],
 		'/test(<number>.*)' => ['application\controllers\test', 'test$number'],

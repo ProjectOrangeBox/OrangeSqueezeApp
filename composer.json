@@ -40,11 +40,16 @@
 		"projectorangebox/ci_parser": "dev-master",
 		"projectorangebox/data": "dev-master",
 		"projectorangebox/rememberme": "dev-master",
-		"projectorangebox/cookie": "dev-master"
+		"projectorangebox/cookie": "dev-master",
+		"projectorangebox/acl": "dev-master"
 	},
 	"repositories": [{
 			"type": "path",
 			"url": "application"
+		},
+		{
+			"type": "path",
+			"url": "packages/projectorangebox/acl"
 		},
 		{
 			"type": "path",

@@ -10,7 +10,7 @@ return [
 	],
 	'name' => 'application_state',
 	'key length' => '64',
-	'handler' => 'projectorangebox\session\handlers\RedisSessionHandler',
+	'handler' => 'projectorangebox\session\handlers\FileSessionHandler',
 	'file' => [
 		'path' => '/var/sessions',
 	],

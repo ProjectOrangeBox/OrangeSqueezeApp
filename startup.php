@@ -18,7 +18,6 @@ function showException($exception): void
 }
 */
 
-/*
 function showException($exception): void
 {
 	ob_flush();
@@ -35,8 +34,7 @@ function showException($exception): void
 
 	exit(1);
 }
-*/
-
+/*
 function showException($exception): void
 {
 	echo "Uncaught exception: ", $exception->getMessage() . '<br>';
@@ -44,6 +42,7 @@ function showException($exception): void
 	echo 'Line ' . $exception->getLine() . '<br>';
 	exit(1);
 }
+*/
 
 set_exception_handler('showException');
 
